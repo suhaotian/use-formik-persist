@@ -25,7 +25,7 @@ Usage:
 ```tsx
 import * as React from 'react';
 import { useFormik } from 'formik';
-import { useFormikPersist } from '../src';
+import { useFormikPersist } from 'use-formik-persist';
 
 export default function FormikPersistExample() {
   const formik = useFormik({
