@@ -25,7 +25,7 @@ Usage:
 ```tsx
 import * as React from 'react';
 import { useFormik } from 'formik';
-import { useFormikPersist } from 'use-formik-persist';
+import { useFormikPersist } from '../src';
 
 export default function FormikPersistExample() {
   const formik = useFormik({
@@ -37,9 +37,7 @@ export default function FormikPersistExample() {
       alert(JSON.stringify(values));
     },
   });
-  const removeCacheFn = useFormikPersist(formik, {
-    namespace: 'formik-example',
-  });
+  const [clear] = useFormikPersist(formik, { namespace: 'formik-example' });
 
   return (
     <div>
@@ -71,11 +69,11 @@ export default function FormikPersistExample() {
           <button type="reset">Reset</button>
           <button
             onClick={() => {
-              removeCacheFn();
-              alert('remove form cache done!');
+              clear();
+              alert('clear cache done!');
             }}
           >
-            Remove Form Cache
+            Clear Cache
           </button>
         </div>
       </form>
