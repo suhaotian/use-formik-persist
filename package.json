@@ -1,0 +1,56 @@
+{
+  "name": "use-formik-persist",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "suhaotian",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suhaotian/use-formik-persist"
+  },
+  "bugs": {
+    "url": "https://github.com/suhaotian/use-formik-persist/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/use-formik-persist.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": ">=1",
+    "formik": ">=2",
+    "react": ">=16.8",
+    "react-use": ">=17"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.5",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "formik": "^2.2.9",
+    "husky": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-use": "^17.2.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  }
+}
