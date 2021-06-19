@@ -1,7 +1,7 @@
 /**
  * useFormikPersist.ts
- * @author jeremy
- * @description formik 状态持久化缓存
+ * @author suhaotian
+ * @description formik state persist hooks
  * @created 2021-06-19 18:48:27
  * @copyright None
  * @last-modified 2021-06-19 18:48:27
