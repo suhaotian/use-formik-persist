@@ -23,7 +23,7 @@ export interface UseFormikPersistOptions {
    */
   debounce?: number;
   /**
-   * storage namespace prefix 
+   * storage namespace prefix
    */
   prefix?: string;
 }
@@ -57,8 +57,9 @@ export function useFormikPersist<T>(
     debounce,
     [formik.values]
   );
-  return () => {
+  function clear() {
     cancel();
     removeItem();
-  };
+  }
+  return [clear];
 }
