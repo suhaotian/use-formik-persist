@@ -12,7 +12,7 @@ export default function FormikPersistExample() {
       alert(JSON.stringify(values));
     },
   });
-  const remove = useFormikPersist(formik, { namespace: 'formik-example' });
+  const [clear] = useFormikPersist(formik, { namespace: 'formik-example' });
 
   return (
     <div>
@@ -44,11 +44,11 @@ export default function FormikPersistExample() {
           <button type="reset">Reset</button>
           <button
             onClick={() => {
-              remove();
-              alert('remove form cache done!');
+              clear();
+              alert('clear cache done!');
             }}
           >
-            Remove Form Cache
+            Clear Cache
           </button>
         </div>
       </form>
