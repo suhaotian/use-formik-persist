@@ -1,6 +1,12 @@
-# use-formik-persist User Guide
+# use-formik-persist **(Deprecate)**
 
-A hook to persist formik's form state, support **web** and **react-native**, 
+> **Note:** better choice, [react-easy-persist](https://github.com/suhaotian/react-easy-persist)
+
+<br />
+<br />
+<br />
+
+A hook to persist formik's form state, support **web** and **react-native**,
 [online demo](https://snack.expo.io/xhKV9CydX).
 
 Install:
